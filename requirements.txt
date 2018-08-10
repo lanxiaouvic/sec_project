@@ -1,6 +1,0 @@
-Django==2.1
-djangorestframework==3.8.2
-gunicorn==19.9.0
-pytest==3.7.1
-pytest-django==3.3.3
-python-dateutil==2.7.3

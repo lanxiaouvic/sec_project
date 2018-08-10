@@ -1,17 +1,16 @@
 [[source]]
-url = "https://pypi.org/simple"
+
+url = "https://pypi.python.org/simple"
 verify_ssl = true
-name = "pypi"
+
 
 [packages]
-djangorestframework = "==3.8.2"
-gunicorn = "==19.9.0"
-pytest = "==3.7.1"
-pytest-django = "==3.3.3"
-python-dateutil = "==2.7.3"
-Django = "==2.1"
 
-[dev-packages]
+django = "*"
+gunicorn = "*"
+django-heroku = "*"
+
 
 [requires]
-python_version = "3.7"
+
+python_version = "3.6"
