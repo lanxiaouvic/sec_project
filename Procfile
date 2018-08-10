@@ -1,1 +1,1 @@
-web: python app.py
+web: gunicorn secondtreasures.wsgi --log-file
