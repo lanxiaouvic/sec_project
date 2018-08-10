@@ -4,8 +4,15 @@ verify_ssl = true
 name = "pypi"
 
 [packages]
+djangorestframework = "*"
+gunicorn = "*"
+pipenv = "*"
+pytest = "*"
+pytest-django = "*"
+requests = "*"
+Django = "*"
 
 [dev-packages]
 
 [requires]
-python_version = "3.7"
+python_version = "3.6.6"
