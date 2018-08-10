@@ -17,8 +17,10 @@ from django.contrib import admin
 from django.conf.urls import url
 from django.urls import include, path
 from rest_framework.authtoken.views import obtain_auth_token
+import bookstore.views
 
 urlpatterns = [
+    url(r'^$', bookstore.views.index, name='index'),
     path('bookstore/', include('bookstore.urls')),
     url(r'^api-token-auth/', obtain_auth_token),
     path('admin/', admin.site.urls),

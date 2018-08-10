@@ -7,6 +7,13 @@ from .permissions import IsAdminOrReadOnly
 from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework import status
+from django.shortcuts import render
+
+
+# Create your views here.
+def index(request):
+    # return HttpResponse('Hello from Python!')
+    return render(request, 'index.html')
 
 class BookList(generics.ListCreateAPIView):
         queryset = Book.objects.all()
