@@ -1,18 +1,12 @@
 from django.http import HttpResponse
 from rest_framework import generics
 from rest_framework.response import Response
-from .models import Book
+from .models import Book, Genre
 from .serializers import BookSerializer
 from .permissions import IsAdminOrReadOnly
 from django.http import Http404
 from rest_framework.views import APIView
 from rest_framework import status
-import requests
-
-def index(request):
-    r = requests.get('http://httpbin.org/status/418')
-    print(r.text)
-    return HttpResponse('<pre>' + r.text + '</pre>')
 
 class BookList(generics.ListCreateAPIView):
         queryset = Book.objects.all()
