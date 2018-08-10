@@ -1,4 +1,0 @@
-[
-  "tests/bookstore/test_views.py::TestBookList::test_can_get_book_list",
-  "tests/bookstore/test_views.py::TestBookListAdmin::test_admin_can_get_book_list"
-]

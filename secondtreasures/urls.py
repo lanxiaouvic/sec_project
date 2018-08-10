@@ -21,7 +21,9 @@ import bookstore.views
 
 urlpatterns = [
     url(r'^$', bookstore.views.index, name='index'),
-    path('bookstore/', include('bookstore.urls')),
+    url(r'^booklist/$', bookstore.views.jlist, name='jlist'),
+    url(r'^books/$', bookstore.views.BookList.as_view(), name='book-list'),
+    url(r'^books/(?P<pk>[0-9]+)/$', bookstore.views.BookDetail.as_view()),
     url(r'^api-token-auth/', obtain_auth_token),
     path('admin/', admin.site.urls),
 ]
